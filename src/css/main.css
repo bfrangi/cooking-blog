@@ -13,11 +13,6 @@ body {
     "ft ft ft ft ft";
 }
 
-/* .box { */
-/*   border: 1px solid red; */
-/*   background: #F8FA9D; */
-/* } */
-
 .header {
   grid-area: hd;
   display: flex;
@@ -52,7 +47,6 @@ body {
   margin: 0px;
   padding: 0px;
   padding-bottom: 10px;
-  padding-left: 10px;
   color: white;
 }
 
@@ -62,51 +56,58 @@ body {
 }
 
 .post-card {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "img info info info";
+  display: flex;
   background: #666666;
   width: 100%;
   border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  margin: 0px;
+  margin-bottom: 10px;
 }
 
 .post-card img {
-  grid-area: img;
-  width: 100%;
+  width: 20%;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-.post-info {
-  grid-area: info;
-  margin: 0px;
-  margin-left: 10px;
+@media (max-width: 800px) {
+  .post-card {
+    flex-direction: column;
+  }
+
+  .post-card img {
+    width: 100%;
+    max-height: 150px;
+  }
 }
 
-.post-card h2 {
+.post-card .post-info {
   margin: 0px;
-  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.post-card .post-info h2 {
+  margin: 0px;
+  margin-bottom: 5px;
   padding: 0px;
   color: white;
 }
 
-.author {
+.post-card .post-info .author {
   margin: 0px;
   padding: 0px;
   color: #c9c9c9;
 }
 
-.date {
+.post-card .post-info .date {
   margin: 0px;
   padding: 0px;
   color: #989898;
 }
 
-.description {
+.post-card .post-info .description {
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 0px;
   color: #c9c9c9;
 }
