@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr, 8fr, 2fr;
+  grid-template-areas:
+    "hd hd hd hd hd"
+    "sd cnt cnt cnt cnt"
+    "ft ft ft ft ft";
+}
+
+/* .box { */
+/*   border: 1px solid red; */
+/*   background: #F8FA9D; */
+/* } */
+
+.header {
+  grid-area: hd;
+  display: flex;
+  background: #2b2b2b;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.sidebar {
+  grid-area: sd;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  background: #3b3b3b;
+  color: white;
+}
+
+.sidebar p {
+  margin: 0px;
+  padding: 5px;
+}
+
+.content {
+  grid-area: cnt;
+  margin: 0px;
+  padding: 20px;
+  background: #494949;
+}
+
+.content h1 {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: white;
+}
+
+.post-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "img info info info";
+  background: #666666;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.post-card img {
+  grid-area: img;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-info {
+  grid-area: info;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.post-card h2 {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  color: white;
+}
+
+.author {
+  margin: 0px;
+  padding: 0px;
+  color: #c9c9c9;
+}
+
+.date {
+  margin: 0px;
+  padding: 0px;
+  color: #989898;
+}
+
+.description {
+  margin: 0px;
+  margin-top: 10px;
+  padding: 0px;
+  color: #c9c9c9;
+}
+
+.footer {
+  grid-area: ft;
+  display: flex;
+}
