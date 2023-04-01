@@ -5,20 +5,36 @@
     <title>Bernat's Blog - Home</title>
     <meta name="description" content="Bernat Frangi's Personal Blog" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/menu.js"></script>
   </head>
   <body>
     <body>
       <div class="container">
-        <div class="header box">Header Text</div>
+        <div class="header box">
+          <p>Chef's Quarter</p>
+          <div class="header-dropdown" onclick="toggleMenu(this)">
+            <button class="header-button">|||</button>
+            <div class="header-dropdown-content" id="header-dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">Starters</a>
+              <a href="#">Main Courses</a>
+              <a href="#">Side Dishes</a>
+              <a href="#">Pastry</a>
+              <a href="#">Cakes</a>
+              <a href="#">Desserts</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
 
         <div class="sidebar box">
           <p>Home</p>
-          <p>Fashion</p>
-          <p>Technology</p>
-          <p>Travel</p>
-          <p>Food</p>
-          <p>Photography</p>
-          <p>About</p>
+          <p>Starters</p>
+          <p>Main Courses</p>
+          <p>Side Dishes</p>
+          <p>Pastry</p>
+          <p>Cakes</p>
+          <p>Desserts</p>
           <p>Contact</p>
         </div>
 
@@ -26,10 +42,8 @@
           <h1>Posts</h1>
           <div class="post-card-container">
             <div class="post-card">
-              <img
-                src="images/post1.jpg"
-              />
-                <!-- src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=" -->
+              <img src="images/post1.jpg" />
+              <!-- src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=" -->
               <div class="post-info">
                 <h2>Post Title</h2>
                 <p class="author">Author</p>
@@ -44,9 +58,7 @@
             </div>
 
             <div class="post-card">
-              <img
-              src="images/post2.jpg"
-              />
+              <img src="images/post2.jpg" />
               <!-- src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" -->
               <div class="post-info">
                 <h2>Post Title</h2>
@@ -64,14 +76,10 @@
         </div>
 
         <div class="footer box">
-            <div class="footer-logo">
-                Bernat Frangi's Blog
-            </div>
-            <div class="footer-text">
-                <em>
-                    <a>Contact</a> · <a>About</a>
-                </em>
-            </div>
+          <div class="footer-logo">Bernat Frangi's Blog</div>
+          <div class="footer-text">
+            <em> <a>Contact</a> · <a>About</a> </em>
+          </div>
         </div>
       </div>
     </body>
