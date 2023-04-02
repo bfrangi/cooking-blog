@@ -1,33 +1,70 @@
 /* ---------------------------------------------------------------- */
 /* - GENERAL LAYOUT ----------------------------------------------- */
 /* ---------------------------------------------------------------- */
+/* :root {
+  --primary-shade: #000000;
+  --secondary-shade: #2b2b2b;
+  --tertiary-shade: #3b3b3b;
+  --quaternary-shade: #494949;
+  --quinary-shade: #555555;
+  --senary-shade: #666666;
+  --septernary-shade: #989898;
+  --octonary-shade: #c9c9c9;
+  --nonary-shade: #ffffff;
+  --denary-shade: var(--quinary-shade);
+} */
+
+:root {
+  --primary-shade: #989898;
+  --secondary-shade: #dadada;
+  --tertiary-shade: #ebebeb;
+  --quaternary-shade: #ffffff;
+  --quinary-shade: #555555;
+  --senary-shade: #f5f5f5;
+  --septernary-shade: #9b9b9b;
+  --octonary-shade: #000000;
+  --nonary-shade: #000000;
+  --denary-shade: #dadada;
+}
 
 body {
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr repeat(4, 2fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "hd hd hd hd hd"
-    "sd cnt cnt cnt cnt"
+    "sd cnt cnt cnt empty"
     "ft ft ft ft ft";
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "hd hd hd hd"
+      "sd cnt cnt cnt"
+      "ft ft ft ft";
+  }
 }
 
 @media (max-width: 800px) {
   .container {
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(3, 2fr);
     grid-template-areas:
-      "hd hd hd hd"
-      "cnt cnt cnt cnt"
-      "ft ft ft ft";
+      "hd hd hd "
+      "cnt cnt cnt"
+      "ft ft ft";
   }
 }
+
 
 /* ---------------------------------------------------------------- */
 /* - HEADER ------------------------------------------------------- */
@@ -38,8 +75,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #2b2b2b;
-  color: white;
+  background: var(--secondary-shade);
+  color: var(--nonary-shade);
   padding: 0px;
   font-size: 22px;
   min-height: 50px;
@@ -54,14 +91,14 @@ body {
 .header-button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--nonary-shade);
   font-size: large;
   height: 50px;
   width: 50px;
 }
 
 .header-button:hover {
-  background-color: #3b3b3b;
+  background-color: var(--tertiary-shade);
   cursor: pointer;
 }
 
@@ -75,7 +112,7 @@ body {
 .header-dropdown-content {
   display: none;
   margin-top: 50px; /* Move down by amount equal to height of navbar */
-  background-color: #3b3b3b;
+  background-color: var(--tertiary-shade);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: absolute;
@@ -86,14 +123,14 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  color: white;
+  color: var(--nonary-shade);
   font-size: 20px;
   min-width: 170px;
 }
 
 /* Change color of dropdown links on header-dropdown-content hover */
 .header-dropdown-content a:hover {
-  background-color: #555555;
+  background-color: var(--tretiary-shade);
 }
 
 /* Show dropdown menu on header-dropdown hover */
@@ -102,7 +139,7 @@ body {
 } */
 
 /* .header-dropdown:hover .header-button {
-  background-color: #3b3b3b;
+  background-color: var(--tertiary-shade);
 } */
 
 @media (max-width: 800px) {
@@ -120,8 +157,8 @@ body {
   display: flex;
   padding: 10px;
   flex-direction: column;
-  background: #3b3b3b;
-  color: white;
+  background: var(--tertiary-shade);
+  color: var(--nonary-shade);
   min-height: 1vh;
 }
 
@@ -129,6 +166,7 @@ body {
   margin: 0px;
   padding: 5px;
   font-size: 20px;
+  text-align: right;
 }
 
 @media (max-width: 800px) {
@@ -145,14 +183,14 @@ body {
   grid-area: cnt;
   margin: 0px;
   padding: 20px;
-  background: #494949;
+  background: var(--quaternary-shade);
 }
 
 .content h1 {
   margin: 0px;
   padding: 0px;
   padding-bottom: 10px;
-  color: white;
+  color: var(--nonary-shade);
 }
 
 /* ---------------------------------------------------------------- */
@@ -166,12 +204,16 @@ body {
 
 .post-card {
   display: flex;
-  background: #666666;
+  background: var(--senary-shade);
   width: 100%;
   border-radius: 10px;
   margin: 0px;
   margin-bottom: 10px;
   box-shadow: 0 2px 13px -5px #000;
+}
+
+.post-card:hover {
+  background: var(--denary-shade);
 }
 
 .post-card img {
@@ -189,26 +231,39 @@ body {
   margin: 0px;
   margin-bottom: 5px;
   padding: 0px;
-  color: white;
+  color: var(--nonary-shade);
 }
 
 .post-card .post-info .author {
   margin: 0px;
   padding: 0px;
-  color: #c9c9c9;
+  color: var(--octonary-shade);
 }
 
 .post-card .post-info .date {
   margin: 0px;
   padding: 0px;
-  color: #989898;
+  color: var(--septernary-shade);
 }
 
 .post-card .post-info .description {
   margin: 0px;
   margin-top: 5px;
   padding: 0px;
-  color: #c9c9c9;
+  color: var(--octonary-shade);
+}
+
+.post-card .ratings-container {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.post-card .ratings {
+  color: var(--quinary-shade);
+}
+
+.post-title {
+  color: var(--nonary-shade);
 }
 
 @media (max-width: 800px) {
@@ -233,6 +288,56 @@ body {
   justify-content: center;
   align-items: center;
   height: 100px;
-  background: #2b2b2b;
-  color: white;
+  background: var(--secondary-shade);
+  color: var(--nonary-shade);
+}
+
+/* ---------------------------------------------------------------- */
+/* - POST DETAIL -------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.post-detail-image {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin: 0px;
+  overflow: hidden;
+  /* box-shadow: 0 2px 13px -5px #000; */
+}
+
+.post-detail-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  /* position: absolute;
+  top: -100%;
+  bottom: -100%;
+  left: -100%;
+  right: -100%; */
+}
+
+.post-detail-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.post-detail-info .date {
+  color: var(--septernary-shade);
+  margin-left: 10px;
+}
+
+.post-detail-info .author {
+  color: var(--octonary-shade);
+}
+
+
+.detail-ratings-container {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.detail-ratings-container .ratings {
+  color: var(--quinary-shade);
 }
