@@ -3,18 +3,18 @@
 /* ---------------------------------------------------------------- */
 
 .content {
-    grid-area: cnt;
-    margin: 0px;
-    padding: 20px;
-    background: var(--quaternary-shade);
-  }
-  
-  .content h1 {
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 10px;
-    color: var(--nonary-shade);
-  }
+  grid-area: cnt;
+  margin: 0px;
+  padding: 20px;
+  background: var(--quaternary-shade);
+}
+
+.content h1 {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  color: var(--nonary-shade);
+}
 
 /* ---------------------------------------------------------------- */
 /* - POST CARDS --------------------------------------------------- */
@@ -90,7 +90,7 @@
 }
 
 .post-card .ratings {
-  color: var(--quinary-shade);
+  color: var(--accent-shade);
 }
 
 .post-title {
@@ -107,4 +107,3 @@
     max-height: 150px;
   }
 }
-

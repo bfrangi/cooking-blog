@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import "header.css";
 @import "sidebar.css";
 @import "content.css";
@@ -21,6 +21,7 @@
   --octonary-shade: #c9c9c9;
   --nonary-shade: #ffffff;
   --denary-shade: #6d6d6d;
+  --accent-shade: #f1a3a3;
 }
 
 /* Light Theme */
@@ -35,6 +36,7 @@
   --octonary-shade: #000000;
   --nonary-shade: #000000;
   --denary-shade: #eeeeee;
+  --accent-shade: #ca5252;
 } */
 
 body {
