@@ -1,0 +1,48 @@
+/* ---------------------------------------------------------------- */
+/* - SIDEBAR ------------------------------------------------------ */
+/* ---------------------------------------------------------------- */
+
+.sidebar {
+    grid-area: sd;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background: var(--tertiary-shade);
+    color: var(--nonary-shade);
+    min-height: 1vh;
+  }
+  
+  .sidebar p {
+    margin: 0px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: right;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    margin: 0px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: right;
+    color: var(--nonary-shade);
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 800px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+/* ---------------------------------------------------------------- */
+/* - EMPTY -------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.empty {
+  grid-area: empty;
+  background: var(--tertiary-shade);
+}
