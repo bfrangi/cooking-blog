@@ -1,123 +1,143 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>Bernat's Blog - Home</title>
+
+    <!-- Metadata -->
+    <meta charset="utf-8" />
     <meta name="description" content="Bernat Frangi's Personal Blog" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- End Metadata -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- End CSS -->
+
+    <!-- JS -->
     <script src="js/menu.js"></script>
+    <!-- End JS -->
+
+    <!-- Icons -->
     <script
       src="https://kit.fontawesome.com/df40e32e75.js"
       crossorigin="anonymous"
     ></script>
+    <!-- End Icons -->
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- End Fonts -->
   </head>
   <body>
-    <body>
-      <div class="container">
-        <div class="header box">
-          <p>Chef's Quarter</p>
-          <div class="header-dropdown" onclick="toggleMenu(this)">
-            <button class="header-button">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="header-dropdown-content" id="header-dropdown-content">
-              <a href="index.html">Home</a>
-              <a href="#">Starters</a>
-              <a href="#">Main Courses</a>
-              <a href="#">Side Dishes</a>
-              <a href="#">Pastry</a>
-              <a href="#">Cakes</a>
-              <a href="#">Desserts</a>
-              <a href="#">Contact</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="sidebar box">
-          <a href="index.html">Home</a>
-          <a href="#">Starters</a>
-          <a href="#">Main Courses</a>
-          <a href="#">Side Dishes</a>
-          <a href="#">Pastry</a>
-          <a href="#">Cakes</a>
-          <a href="#">Desserts</a>
-          <a href="#">Contact</a>
-        </div>
-
-        <div class="content box">
-          <h1>Recipes</h1>
-          <div class="post-card-container">
-            <div class="post-card">
-              <img src="images/post1.jpg" />
-              <!-- src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=" -->
-              <div class="post-info">
-                <h2>
-                  <a class="post-title" href="post1.html"> Chilli con carne </a>
-                </h2>
-                <p class="author">Chef's Quarter Team</p>
-                <p class="date">1 April</p>
-                <div class="ratings-container">
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-regular fa-star ratings"></i>
-                  <i class="ratings">86 Ratings</i>
-                </div>
-                <p class="description">
-                  This great chilli recipe has to be one of the best dishes to
-                  serve to friends for a casual get-together. An easy sharing
-                  favourite that uses up storecupboard ingredients.
-                </p>
-              </div>
-            </div>
-
-            <div class="post-card">
-              <img src="images/post2.jpg" />
-              <!-- src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" -->
-              <div class="post-info">
-                <h2>
-                  <a class="post-title" href="post2.html">
-                    Ultimate spaghetti carbonara recipe
-                  </a>
-                </h2>
-                <p class="author">Angela Cook</p>
-                <p class="date">25 March</p>
-                <div class="ratings-container">
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="fa-solid fa-star ratings"></i>
-                  <i class="ratings">124 Ratings</i>
-                </div>
-                <p class="description">
-                  Discover how to make superb spaghetti carbonara. This cheesy
-                  pasta dish is an Italian favourite and with the right
-                  technique, you can make it perfect every time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="empty"></div>
-
-        <div class="footer box">
-          <div class="footer-logo">Chef's Quarter</div>
-          <div class="footer-text">
-            <em> <a>Contact</a> · <a>About</a> </em>
+    <div class="container">
+      <!-- Header -->
+      <div class="header box">
+        <p>Chef's Quarter</p>
+        <div class="header-dropdown" onclick="toggleMenu(this)">
+          <button class="header-button">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="header-dropdown-content" id="header-dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="#">Starters</a>
+            <a href="#">Main Courses</a>
+            <a href="#">Side Dishes</a>
+            <a href="#">Pastry</a>
+            <a href="#">Cakes</a>
+            <a href="#">Desserts</a>
+            <a href="#">Contact</a>
           </div>
         </div>
       </div>
-    </body>
+      <!-- End Header -->
+
+      <!-- Left Sidebar -->
+      <div class="sidebar box">
+        <a href="index.html">Home</a>
+        <a href="#">Starters</a>
+        <a href="#">Main Courses</a>
+        <a href="#">Side Dishes</a>
+        <a href="#">Pastry</a>
+        <a href="#">Cakes</a>
+        <a href="#">Desserts</a>
+        <a href="#">Contact</a>
+      </div>
+      <!-- End Left Sidebar -->
+
+      <!-- Main Content -->
+      <div class="content box">
+        <h1>Recipes</h1>
+        <div class="post-card-container">
+          <div class="post-card">
+            <img src="images/post1.jpg" />
+            <div class="post-info">
+              <h2>
+                <a class="post-title" href="post1.html"> Chilli con carne </a>
+              </h2>
+              <p class="author">Chef's Quarter Team</p>
+              <p class="date">1 April</p>
+              <div class="ratings-container">
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-regular fa-star ratings"></i>
+                <i class="ratings">86 Ratings</i>
+              </div>
+              <p class="description">
+                This great chilli recipe has to be one of the best dishes to
+                serve to friends for a casual get-together. An easy sharing
+                favourite that uses up storecupboard ingredients.
+              </p>
+            </div>
+          </div>
+
+          <div class="post-card">
+            <img src="images/post2.jpg" />
+            <div class="post-info">
+              <h2>
+                <a class="post-title" href="post2.html">
+                  Ultimate spaghetti carbonara recipe
+                </a>
+              </h2>
+              <p class="author">Angela Cook</p>
+              <p class="date">25 March</p>
+              <div class="ratings-container">
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="fa-solid fa-star ratings"></i>
+                <i class="ratings">124 Ratings</i>
+              </div>
+              <p class="description">
+                Discover how to make superb spaghetti carbonara. This cheesy
+                pasta dish is an Italian favourite and with the right technique,
+                you can make it perfect every time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Main Content -->
+
+      <!-- Right Sidebar -->
+      <div class="empty"></div>
+      <!-- End Right Sidebar -->
+
+      <!-- Footer -->
+      <div class="footer box">
+        <div class="footer-logo">Chef's Quarter</div>
+        <div class="footer-text">
+          <em> <a>Contact</a> · <a>About</a> </em>
+        </div>
+      </div>
+      <!-- End Footer -->
+    </div>
   </body>
 </html>
