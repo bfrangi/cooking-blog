@@ -1,3 +1,3 @@
-# cooking-blog
+# Cooking Blog
 
-Simple template for a cooking blog made using `HTML` and `CSS`.
+Simple responsive template for a cooking blog made using `HTML` and `CSS`.

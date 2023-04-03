@@ -49,3 +49,17 @@
 #recipe-detail-title {
   font-style: italic;
 }
+
+.recipe-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recipe-metadata .social {
+  color: var(--accent-shade);
+}
+
+.recipe-metadata .social i {
+  margin-left: 10px;
+}
