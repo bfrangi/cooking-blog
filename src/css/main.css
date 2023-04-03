@@ -1,20 +1,20 @@
 /* ---------------------------------------------------------------- */
 /* - GENERAL LAYOUT ----------------------------------------------- */
 /* ---------------------------------------------------------------- */
-/* :root {
+:root {
   --primary-shade: #000000;
   --secondary-shade: #2b2b2b;
   --tertiary-shade: #3b3b3b;
   --quaternary-shade: #494949;
-  --quinary-shade: #555555;
+  --quinary-shade: #b9b9b9;
   --senary-shade: #666666;
   --septernary-shade: #989898;
   --octonary-shade: #c9c9c9;
   --nonary-shade: #ffffff;
-  --denary-shade: var(--quinary-shade);
-} */
+  --denary-shade: #6d6d6d;
+}
 
-:root {
+/* :root {
   --primary-shade: #989898;
   --secondary-shade: #dadada;
   --tertiary-shade: #ebebeb;
@@ -24,8 +24,8 @@
   --septernary-shade: #9b9b9b;
   --octonary-shade: #000000;
   --nonary-shade: #000000;
-  --denary-shade: #dadada;
-}
+  --denary-shade: #eeeeee;
+} */
 
 body {
   margin: 0;
@@ -130,7 +130,7 @@ body {
 
 /* Change color of dropdown links on header-dropdown-content hover */
 .header-dropdown-content a:hover {
-  background-color: var(--tretiary-shade);
+  background-color: var(--secondary-shade);
 }
 
 /* Show dropdown menu on header-dropdown hover */
@@ -278,6 +278,15 @@ body {
 }
 
 /* ---------------------------------------------------------------- */
+/* - EMPTY -------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.empty {
+  grid-area: empty;
+  background: var(--tertiary-shade);
+}
+
+/* ---------------------------------------------------------------- */
 /* - FOOTER ------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
 
@@ -310,11 +319,6 @@ body {
   width: 100%;
   border-radius: 10px;
   object-fit: cover;
-  /* position: absolute;
-  top: -100%;
-  bottom: -100%;
-  left: -100%;
-  right: -100%; */
 }
 
 .post-detail-info {
@@ -340,4 +344,8 @@ body {
 
 .detail-ratings-container .ratings {
   color: var(--quinary-shade);
+}
+
+.recipe-content {
+  color: var(--nonary-shade)
 }
